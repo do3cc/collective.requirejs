@@ -39,6 +39,11 @@ modifying the original jquery. It will not be overridden!
 Please have a look of your own into the history of the repository for
 understand the changes.
 
+License
+=======
+The integration code is licenced under BSD, the embedded libraries have
+their own licences
+
 Todo
 ====
 [ ] Create resource bundles and document how to add them
