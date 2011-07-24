@@ -5,7 +5,8 @@
 //     Oliver Steele's Functional, and John Resig's Micro-Templating.
 //     For all details and documentation:
 //     http://documentcloud.github.com/underscore
-
+/* I hope people forgive me for not indenting properly here */
+define(function(){
 (function() {
 
   // Baseline setup
@@ -837,3 +838,5 @@
   };
 
 })();
+    return _.noConflict();
+});
