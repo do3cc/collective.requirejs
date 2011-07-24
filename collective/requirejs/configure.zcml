@@ -1,0 +1,19 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+  <browser:resourceDirectory
+      name="collective.requirejs"
+      directory="js"
+      />
+
+  <browser:page
+      for="Products.CMFCore.interfaces.ISiteRoot"
+      name="require_config.js"
+      class=".views.Config"
+      permission="zope.Public"
+      />
+
+  <include file="profiles.zcml" />
+
+</configure>
