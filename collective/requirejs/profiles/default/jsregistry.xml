@@ -24,5 +24,6 @@
  <javascript
     id="require_config.js"
     cacheable="True" compression="safe" cookable="True"
-    enabled="True" expression=""  inline="False"/>
+    enabled="True" expression=""  inline="False"
+    insert-before="++resource++collective.requirejs/require.js"/>
 </object>
