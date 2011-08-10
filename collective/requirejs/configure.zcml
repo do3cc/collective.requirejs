@@ -3,6 +3,11 @@
     xmlns:browser="http://namespaces.zope.org/browser">
 
   <browser:resourceDirectory
+      name="collective.requirejs.css"
+      directory="css"
+      />
+
+  <browser:resourceDirectory
       name="collective.requirejs"
       directory="js"
       />
