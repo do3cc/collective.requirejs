@@ -2,7 +2,7 @@
 // Revision: 520, date: 2011-08-16 09:22:43
 // Copyright (c) 2008-10  Martin Wendt (http://dynatree.googlecode.com/)
 // Dual licensed under the MIT or GPL Version 2 licenses.
-
+define(['jquery-1.6.2', 'jquery-ui-1.8.14'], function(jQuery){
 var _canLog=true;function _log(mode,msg){if(!_canLog){return;}
 var args=Array.prototype.slice.apply(arguments,[1]);var dt=new Date();var tag=dt.getHours()+":"+dt.getMinutes()+":"+dt.getSeconds()+"."+dt.getMilliseconds();args[0]=tag+" - "+args[0];try{switch(mode){case"info":window.console.info.apply(window.console,args);break;case"warn":window.console.warn.apply(window.console,args);break;default:window.console.log.apply(window.console,args);break;}}catch(e){if(!window.console){_canLog=false;}}}
 function logMsg(msg){Array.prototype.unshift.apply(arguments,["debug"]);_log.apply(this,arguments);}
@@ -267,3 +267,4 @@ if(targetNode){if(!targetNode.tree.options.dnd.onDrop){noop();}else if(targetNod
 if(targetNode){if(dropped){targetNode.tree._onDragEvent("drop",targetNode,sourceNode,event,ui,draggable);}
 targetNode.tree._onDragEvent("leave",targetNode,sourceNode,event,ui,draggable);}
 if(sourceNode){sourceNode.tree._onDragEvent("stop",sourceNode,null,event,ui,draggable);}}});didRegisterDnd=true;};})(jQuery);
+});
